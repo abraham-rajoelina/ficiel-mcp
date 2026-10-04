@@ -3,7 +3,7 @@
   "name": "io.ficiel/ficiel",
   "title": "Ficiel",
   "description": "Instagram, WhatsApp, LinkedIn DMs: full threads, dormant leads, human-approved follow-ups",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "websiteUrl": "https://ficiel.io/mcp",
   "icons": [
     {
@@ -36,5 +36,9 @@
         }
       ]
     }
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/abraham-rajoelina/ficiel-mcp",
+    "source": "github"
+  }
 }
