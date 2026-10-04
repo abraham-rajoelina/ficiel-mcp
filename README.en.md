@@ -7,8 +7,9 @@ Ficiel is an AI inbox that rereads your Instagram, WhatsApp and LinkedIn convers
 This repository documents Ficiel's MCP (Model Context Protocol) server: the endpoint that lets Claude, Cursor or any MCP client read your conversations, find a contact, spot dormant leads and draft a follow-up, with your permission. It contains documentation only. The server is a service hosted by Ficiel and its code is not published here.
 
 - Server URL: `https://bridge.ficiel.io/mcp` (Streamable HTTP)
-- Tools: 64 as of October 4, 2026 (31 read, 33 write), full list in [TOOLS.md](TOOLS.md) (titles and descriptions in French, as sent by the server)
+- Tools: 65 as of October 4, 2026 (32 read, 33 write), full list in [TOOLS.md](TOOLS.md) (titles and descriptions in French, as sent by the server)
 - Text is never cut: messages, voice notes, notes and agent instructions come back in full; long answers are paginated (`next_cursor`)
+- Media are readable: an image carries its description and visible text, a document its text, a video its duration and spoken words; `ficiel_get_media` returns the image or document itself
 - Channels: Instagram, WhatsApp, LinkedIn
 - Official page: https://ficiel.io/mcp/
 - Official MCP registry: `io.ficiel/ficiel`

@@ -7,8 +7,10 @@ Ficiel est une boîte de réception IA qui relit l'historique de conversations I
 Ce dépôt documente son serveur MCP (Model Context Protocol) : l'adresse qui permet à Claude, Cursor ou tout client MCP de lire vos conversations, retrouver un contact, repérer les prospects qui dorment et préparer une relance, avec votre autorisation. Il ne contient que de la documentation : le serveur est un service hébergé par Ficiel, son code n'est pas publié ici.
 
 - Adresse du serveur : `https://bridge.ficiel.io/mcp` (Streamable HTTP)
-- Outils : 64 au 4 octobre 2026 (31 en lecture, 33 en écriture), liste complète dans [TOOLS.md](TOOLS.md)
+- Outils : 65 au 4 octobre 2026 (32 en lecture, 33 en écriture), liste complète dans [TOOLS.md](TOOLS.md)
 - Textes jamais coupés : messages, vocaux, notes, instructions de Kord sortent en entier ; une réponse longue se pagine (`next_cursor`)
+- Médias lisibles : une image porte sa description et son texte visible, un document son texte, une vidéo sa durée et ses paroles ; `ficiel_get_media` rend l'image ou le document lui-même
+- Vu / non vu : l'état de lecture de votre dernier message, relu chez le canal au moment où l'assistant ouvre la conversation
 - Canaux : Instagram, WhatsApp, LinkedIn
 - Page officielle : https://ficiel.io/mcp/
 - Registre officiel MCP : `io.ficiel/ficiel`
