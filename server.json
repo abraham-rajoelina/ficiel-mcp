@@ -2,11 +2,17 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.ficiel/ficiel",
   "title": "Ficiel",
-  "description": "Inbox Instagram, WhatsApp, LinkedIn: read DMs, find dormant leads, draft and send follow-ups.",
-  "version": "1.0.0",
+  "description": "Instagram, WhatsApp, LinkedIn DMs: full threads, dormant leads, human-approved follow-ups",
+  "version": "1.1.0",
   "websiteUrl": "https://ficiel.io/mcp",
   "icons": [
-    { "src": "https://ficiel.io/assets/images/ficiel-logo-192.png", "mimeType": "image/png", "sizes": ["192x192"] }
+    {
+      "src": "https://ficiel.io/assets/images/ficiel-logo-192.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "192x192"
+      ]
+    }
   ],
   "remotes": [
     {

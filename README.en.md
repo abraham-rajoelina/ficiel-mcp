@@ -7,7 +7,8 @@ Ficiel is an AI inbox that rereads your Instagram, WhatsApp and LinkedIn convers
 This repository documents Ficiel's MCP (Model Context Protocol) server: the endpoint that lets Claude, Cursor or any MCP client read your conversations, find a contact, spot dormant leads and draft a follow-up, with your permission. It contains documentation only. The server is a service hosted by Ficiel and its code is not published here.
 
 - Server URL: `https://bridge.ficiel.io/mcp` (Streamable HTTP)
-- Tools: 61 as of October 3, 2026, full list in [TOOLS.md](TOOLS.md) (titles and descriptions in French, as sent by the server)
+- Tools: 64 as of October 4, 2026 (31 read, 33 write), full list in [TOOLS.md](TOOLS.md) (titles and descriptions in French, as sent by the server)
+- Text is never cut: messages, voice notes, notes and agent instructions come back in full; long answers are paginated (`next_cursor`)
 - Channels: Instagram, WhatsApp, LinkedIn
 - Official page: https://ficiel.io/mcp/
 - Official MCP registry: `io.ficiel/ficiel`
@@ -42,6 +43,22 @@ claude mcp add --transport http ficiel https://bridge.ficiel.io/mcp --header "Au
 ```
 
 Keys start with `fk_live_`. A key belongs to a single organization and never sees anything else.
+
+## ChatGPT
+
+ChatGPT accepts remote MCP servers in developer mode, on the web, for Plus, Pro, Business, Enterprise and Education plans ([OpenAI documentation](https://developers.openai.com/api/docs/guides/developer-mode)):
+
+1. In ChatGPT, Settings, Security and login: turn on developer mode.
+2. Create a developer-mode app with the URL `https://bridge.ficiel.io/mcp`, OAuth authentication.
+3. ChatGPT sends you to Ficiel: sign in and choose read only, or read and send.
+
+This follows OpenAI's documentation but has not been tested end to end by Ficiel yet: verified clients are Claude (app and Claude Code) and Cursor.
+
+## Example requests
+
+- "List the conversations where my last message was seen and got no reply for more than three days."
+- "Read my whole thread with @name and tell me what made them hesitate."
+- "Draft a follow-up for the five prospects who asked my price in September, I will approve them in Ficiel."
 
 ## Nothing is sent without a human
 

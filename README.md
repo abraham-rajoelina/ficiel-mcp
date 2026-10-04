@@ -7,7 +7,8 @@ Ficiel est une boîte de réception IA qui relit l'historique de conversations I
 Ce dépôt documente son serveur MCP (Model Context Protocol) : l'adresse qui permet à Claude, Cursor ou tout client MCP de lire vos conversations, retrouver un contact, repérer les prospects qui dorment et préparer une relance, avec votre autorisation. Il ne contient que de la documentation : le serveur est un service hébergé par Ficiel, son code n'est pas publié ici.
 
 - Adresse du serveur : `https://bridge.ficiel.io/mcp` (Streamable HTTP)
-- Outils : 61 au 3 octobre 2026, liste complète dans [TOOLS.md](TOOLS.md)
+- Outils : 64 au 4 octobre 2026 (31 en lecture, 33 en écriture), liste complète dans [TOOLS.md](TOOLS.md)
+- Textes jamais coupés : messages, vocaux, notes, instructions de Kord sortent en entier ; une réponse longue se pagine (`next_cursor`)
 - Canaux : Instagram, WhatsApp, LinkedIn
 - Page officielle : https://ficiel.io/mcp/
 - Registre officiel MCP : `io.ficiel/ficiel`
@@ -43,9 +44,22 @@ claude mcp add --transport http ficiel https://bridge.ficiel.io/mcp --header "Au
 
 Les clés commencent par `fk_live_`. Une clé appartient à une seule organisation et ne voit jamais qu'elle.
 
-## Et ChatGPT ?
+## ChatGPT
 
-Ficiel parle MCP, le protocole ouvert que ChatGPT accepte aussi pour ses connecteurs. La connexion de bout en bout depuis ChatGPT n'a pas encore été vérifiée : elle n'est donc pas annoncée comme compatible. Les clients vérifiés sont Claude (application et Claude Code) et Cursor.
+ChatGPT accepte les serveurs MCP distants en mode développeur, sur le web, pour les formules Plus, Pro, Business, Enterprise et Éducation ([documentation d'OpenAI](https://developers.openai.com/api/docs/guides/developer-mode)) :
+
+1. Dans ChatGPT, Réglages, Sécurité et connexion : activez le mode développeur.
+2. Créez une application de mode développeur avec l'adresse `https://bridge.ficiel.io/mcp`, authentification OAuth.
+3. ChatGPT vous envoie sur Ficiel : connectez-vous et choisissez lecture seule, ou lecture et envoi.
+
+Ce chemin suit la documentation d'OpenAI, mais il n'a pas encore été joué de bout en bout par Ficiel : les clients vérifiés sont Claude (application et Claude Code) et Cursor.
+
+## Exemples de demandes
+
+- « Liste les conversations où mon dernier message a été vu sans réponse depuis plus de trois jours. »
+- « Lis tout l'échange avec @prenom et dis-moi ce qui l'a fait hésiter. »
+- « Prépare une relance pour les cinq prospects qui m'ont demandé mon prix en septembre, je les validerai dans Ficiel. »
+- « Ajoute à mes critères de qualification : a déjà un compte Instagram de plus de 5 000 abonnés. »
 
 ## Rien ne part sans un humain
 
