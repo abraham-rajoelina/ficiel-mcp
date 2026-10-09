@@ -70,6 +70,8 @@ An assistant can read almost everything and do almost nothing on its own. See [H
 
 The server is open to organizations on a trial (10 days free: https://ficiel.io) or subscribed. Without a started trial, while paused, or if a subscription is unpaid or expired, every tool returns a refusal with the link to reactivate access.
 
+What the assistant can do depends on the plan. **Essentiel**: all the day-to-day work, meaning reading, searching, preparing, sending and scheduling follow-ups, organizing contacts (tags, stages, notes, one at a time or in bulk) and adjusting Kord. **Intégral**: on top of that, creating and configuring automations, per-channel AI and the offer amount. Reading those settings, pausing a channel or turning an automation off stay open to everyone. A reserved tool returns a refusal that says what the current plan already allows and links to change plans.
+
 ## Contact
 
 Abraham Rajoelina, founder of Ficiel: abraham@ficiel.io

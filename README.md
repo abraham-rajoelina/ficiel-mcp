@@ -76,6 +76,8 @@ Des requêtes réelles et ce que l'assistant fait derrière : [examples/EXEMPLES
 
 Le serveur est ouvert aux organisations en essai (10 jours offerts : https://ficiel.io) ou abonnées. Sans essai démarré, en pause, ou si l'abonnement est impayé ou échu, chaque outil répond par un refus avec le lien pour réactiver l'accès.
 
+Ce que l'assistant peut faire dépend de la formule. **Essentiel** : tout le quotidien, c'est-à-dire lire, chercher, préparer, envoyer et programmer les relances, ranger ses contacts (tags, étapes, notes, un par un ou en lot) et ajuster Kord. **Intégral** : en plus, créer et régler les automatisations, l'IA par canal et le montant de l'offre. Lire ces réglages, couper un canal ou éteindre une automatisation restent ouverts à tous. Un outil réservé répond par un refus qui dit ce que la formule permet déjà et donne le lien pour en changer.
+
 ## Contact
 
 Abraham Rajoelina, fondateur de Ficiel : abraham@ficiel.io
