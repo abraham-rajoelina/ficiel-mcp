@@ -2,12 +2,13 @@
 
 [English version](README.en.md)
 
-Ficiel est une boîte de réception IA qui relit l'historique de conversations Instagram, WhatsApp et LinkedIn pour retrouver et relancer les prospects restés sans réponse.
+Ficiel est une boîte de réception IA pour coachs et setters : elle ressort les anciennes conversations Instagram, WhatsApp et LinkedIn à relancer, prépare le message, et rien ne part sans validation humaine.
 
 Ce dépôt documente son serveur MCP (Model Context Protocol) : l'adresse qui permet à Claude, Cursor ou tout client MCP de lire vos conversations, retrouver un contact, repérer les prospects qui dorment et préparer une relance, avec votre autorisation. Il ne contient que de la documentation : le serveur est un service hébergé par Ficiel, son code n'est pas publié ici.
 
 - Adresse du serveur : `https://bridge.ficiel.io/mcp` (Streamable HTTP)
-- Outils : 65 au 4 octobre 2026 (32 en lecture, 33 en écriture), liste complète dans [TOOLS.md](TOOLS.md)
+- Outils : 74 au 9 octobre 2026, dont 22 qui affichent un écran interactif (statistiques, entonnoir, cash, contacts à relancer, relance prête, fiche, analyse…), liste complète dans [TOOLS.md](TOOLS.md)
+- Écrans interactifs (MCP Apps, depuis le 8 octobre 2026) : « qui m'a laissé en vu ? » affiche la liste des contacts à relancer avec un bouton Relancer, la relance préparée s'ouvre dans le même écran et part d'un clic sur Envoyer ; aussi la fiche d'un prospect et la synthèse du mois
 - Textes jamais coupés : messages, vocaux, notes, instructions de Kord sortent en entier ; une réponse longue se pagine (`next_cursor`)
 - Médias lisibles : une image porte sa description et son texte visible, un document son texte, une vidéo sa durée et ses paroles ; `ficiel_get_media` rend l'image ou le document lui-même
 - Vu / non vu : l'état de lecture de votre dernier message, relu chez le canal au moment où l'assistant ouvre la conversation
@@ -73,7 +74,7 @@ Des requêtes réelles et ce que l'assistant fait derrière : [examples/EXEMPLES
 
 ## Accès
 
-Le serveur est ouvert aux organisations abonnées à Ficiel. Pendant l'audit gratuit, ou si l'abonnement est impayé, les outils répondent par un refus explicite. Essai : https://ficiel.io (10 jours offerts).
+Le serveur est ouvert aux organisations en essai (10 jours offerts : https://ficiel.io) ou abonnées. Sans essai démarré, en pause, ou si l'abonnement est impayé ou échu, chaque outil répond par un refus avec le lien pour réactiver l'accès.
 
 ## Contact
 

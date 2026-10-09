@@ -2,12 +2,13 @@
 
 [Version française](README.md)
 
-Ficiel is an AI inbox that rereads your Instagram, WhatsApp and LinkedIn conversation history to find and follow up with prospects who never got a reply.
+Ficiel is an AI inbox for coaches and setters: it surfaces old Instagram, WhatsApp and LinkedIn conversations worth following up, drafts the message, and nothing is sent without human approval.
 
 This repository documents Ficiel's MCP (Model Context Protocol) server: the endpoint that lets Claude, Cursor or any MCP client read your conversations, find a contact, spot dormant leads and draft a follow-up, with your permission. It contains documentation only. The server is a service hosted by Ficiel and its code is not published here.
 
 - Server URL: `https://bridge.ficiel.io/mcp` (Streamable HTTP)
-- Tools: 65 as of October 4, 2026 (32 read, 33 write), full list in [TOOLS.md](TOOLS.md) (titles and descriptions in French, as sent by the server)
+- Tools: 74 as of October 9, 2026, 22 of which display an interactive screen (stats, funnel, cash, leads to follow up, drafted follow-up, prospect card, analysis…), full list in [TOOLS.md](TOOLS.md) (titles and descriptions in French, as sent by the server)
+- Interactive screens (MCP Apps, since October 8, 2026): "who left me on read?" shows the leads to follow up with a Follow up button; the drafted follow-up opens in the same screen and is sent on a click on Send. Also a prospect card and a monthly summary
 - Text is never cut: messages, voice notes, notes and agent instructions come back in full; long answers are paginated (`next_cursor`)
 - Media are readable: an image carries its description and visible text, a document its text, a video its duration and spoken words; `ficiel_get_media` returns the image or document itself
 - Channels: Instagram, WhatsApp, LinkedIn
@@ -67,7 +68,7 @@ An assistant can read almost everything and do almost nothing on its own. See [H
 
 ## Access
 
-The server is open to organizations subscribed to Ficiel. During the free audit, or if a subscription is unpaid, tools return an explicit refusal. Trial: https://ficiel.io (10 days free).
+The server is open to organizations on a trial (10 days free: https://ficiel.io) or subscribed. Without a started trial, while paused, or if a subscription is unpaid or expired, every tool returns a refusal with the link to reactivate access.
 
 ## Contact
 

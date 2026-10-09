@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.ficiel/ficiel",
   "title": "Ficiel",
-  "description": "Instagram, WhatsApp, LinkedIn DMs and media: full threads, dormant leads, human-approved follow-ups",
-  "version": "1.2.0",
+  "description": "Instagram, WhatsApp, LinkedIn DMs: interactive follow-up cards, dormant leads, full threads",
+  "version": "1.3.0",
   "websiteUrl": "https://ficiel.io/mcp",
   "icons": [
     {
