@@ -8,7 +8,7 @@ Une clé, ou une connexion OAuth, porte la lecture seule ou la lecture et l'écr
 
 ## Un destinataire nommé, confronté au contact réel
 
-Les outils qui écrivent à quelqu'un (`ficiel_send_message`, `ficiel_send_media`, `ficiel_schedule_message`) exigent le paramètre `recipient` : le nom affiché, le @pseudo, le numéro WhatsApp ou le nom du groupe. Avant tout envoi, il est comparé au contact réel de la conversation visée. S'ils ne correspondent pas, l'envoi est refusé (`recipient_mismatch`) et rien ne part. Un contact sans aucune identité connue exige `recipient = "sans nom"` : l'absence de vérification est un choix déclaré, jamais un cas par défaut.
+Les outils qui écrivent à quelqu'un (`ficiel_send_message`, `ficiel_send_media`, `ficiel_schedule_message`) exigent le paramètre `recipient` : le nom affiché, le `@pseudo`, le numéro WhatsApp ou le nom du groupe. Avant tout envoi, il est comparé au contact réel de la conversation visée. S'ils ne correspondent pas, l'envoi est refusé (`recipient_mismatch`) et rien ne part. Un contact sans aucune identité connue exige `recipient = "sans nom"` : l'absence de vérification est un choix déclaré, jamais un cas par défaut.
 
 ## Aucun message à un inconnu
 

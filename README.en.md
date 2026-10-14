@@ -7,7 +7,7 @@ Ficiel is an AI inbox for coaches and setters: it surfaces old Instagram, WhatsA
 This repository documents Ficiel's MCP (Model Context Protocol) server: the endpoint that lets Claude, Cursor or any MCP client read your conversations, find a contact, spot dormant leads and draft a follow-up, with your permission. It contains documentation only. The server is a service hosted by Ficiel and its code is not published here.
 
 - Server URL: `https://bridge.ficiel.io/mcp` (Streamable HTTP)
-- Tools: 74 as of October 9, 2026, 22 of which display an interactive screen (stats, funnel, cash, leads to follow up, drafted follow-up, prospect card, analysis…), full list in [TOOLS.md](TOOLS.md) (titles and descriptions in French, as sent by the server)
+- Tools: 73 as of October 14, 2026, 17 of which display an interactive screen, plus 12 ready-made requests (prompts) in your assistant's menu; no voice message is ever generated, a voice message sent is always one you recorded (stats, funnel, cash, leads to follow up, drafted follow-up, prospect card, analysis…), full list in [TOOLS.md](TOOLS.md) (titles and descriptions in French, as sent by the server)
 - Interactive screens (MCP Apps, since October 8, 2026): "who left me on read?" shows the leads to follow up with a Follow up button; the drafted follow-up opens in the same screen and is sent on a click on Send. Also a prospect card and a monthly summary
 - Text is never cut: messages, voice notes, notes and agent instructions come back in full; long answers are paginated (`next_cursor`)
 - Media are readable: an image carries its description and visible text, a document its text, a video its duration and spoken words; `ficiel_get_media` returns the image or document itself
@@ -59,7 +59,7 @@ This follows OpenAI's documentation but has not been tested end to end by Ficiel
 ## Example requests
 
 - "List the conversations where my last message was seen and got no reply for more than three days."
-- "Read my whole thread with @name and tell me what made them hesitate."
+- "Read my whole thread with `@name` and tell me what made them hesitate."
 - "Draft a follow-up for the five prospects who asked my price in September, I will approve them in Ficiel."
 
 ## Nothing is sent without a human
@@ -77,3 +77,16 @@ What the assistant can do depends on the plan. **Essentiel**: all the day-to-day
 Abraham Rajoelina, founder of Ficiel: abraham@ficiel.io
 
 Documentation licensed under CC BY 4.0 (see [LICENSE](LICENSE)).
+
+## Where to find Ficiel MCP
+
+- Official MCP Registry: `io.ficiel/ficiel`
+- [Glama](https://glama.ai/mcp/connectors/io.ficiel/ficiel)
+- [LobeHub](https://lobehub.com/mcp/ficiel)
+- [Cursor Directory](https://cursor.directory/plugins/ficiel-mcp)
+- [mcpservers.org](https://mcpservers.org/servers/ficiel-io-mcp)
+- Official page: https://ficiel.io/mcp/
+
+## License
+
+The documentation in this repository is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0, full text in [LICENSE](LICENSE)), © 2026 Ficiel.io, Abraham Rajoelina. It covers only the files in this repository: the Ficiel service, its MCP server and their code are not covered and remain the property of Ficiel.io.

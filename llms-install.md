@@ -34,4 +34,4 @@ Never write the key into a file that is committed to a repository.
 
 ## Check
 
-List the tools: names start with `ficiel_` (74 tools, full list in TOOLS.md). Nothing is sent to a contact without the user's approval; every send must name its recipient.
+List the tools: names start with `ficiel_` (73 tools, full list in TOOLS.md). Nothing is sent to a contact without the user's approval; every send must name its recipient.

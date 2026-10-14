@@ -14,7 +14,7 @@ Il appelle la détection de dormants (`ficiel_find_dormant_leads`) avec votre se
 
 Il lit le contexte chronologique du contact, tous canaux confondus (`ficiel_get_lead_context`), et vous rend un résumé en quelques lignes : ce qu'il a demandé, ce que vous avez proposé, où ça s'est arrêté.
 
-## « Prépare une relance pour @prenom sur Instagram, je la validerai. »
+## « Prépare une relance pour `@prenom` sur Instagram, je la validerai. »
 
 Il prépare une carte de relance (`ficiel_prepare_followup`), sans rien envoyer : vous la relisez et l'envoyez depuis Ficiel.
 

@@ -1,16 +1,30 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.ficiel/ficiel",
-  "title": "Ficiel",
-  "description": "Instagram, WhatsApp, LinkedIn DMs: interactive follow-up cards, dormant leads, full threads",
-  "version": "1.3.0",
+  "title": "Ficiel MCP",
+  "description": "Read and search your Instagram, WhatsApp and LinkedIn DMs and prepare follow-ups you approve.",
+  "version": "1.4.0",
   "websiteUrl": "https://ficiel.io/mcp",
   "icons": [
+    {
+      "src": "https://ficiel.io/assets/images/ficiel-logo.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    },
     {
       "src": "https://ficiel.io/assets/images/ficiel-logo-192.png",
       "mimeType": "image/png",
       "sizes": [
         "192x192"
+      ]
+    },
+    {
+      "src": "https://ficiel.io/assets/images/ficiel-logo-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
       ]
     }
   ],

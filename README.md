@@ -7,7 +7,7 @@ Ficiel est une boîte de réception IA pour coachs et setters : elle ressort les
 Ce dépôt documente son serveur MCP (Model Context Protocol) : l'adresse qui permet à Claude, Cursor ou tout client MCP de lire vos conversations, retrouver un contact, repérer les prospects qui dorment et préparer une relance, avec votre autorisation. Il ne contient que de la documentation : le serveur est un service hébergé par Ficiel, son code n'est pas publié ici.
 
 - Adresse du serveur : `https://bridge.ficiel.io/mcp` (Streamable HTTP)
-- Outils : 74 au 9 octobre 2026, dont 22 qui affichent un écran interactif (statistiques, entonnoir, cash, contacts à relancer, relance prête, fiche, analyse…), liste complète dans [TOOLS.md](TOOLS.md)
+- Outils : 73 au 14 octobre 2026, dont 17 qui affichent un écran interactif, et 12 demandes prêtes à l'emploi (prompts) dans le menu de votre assistant ; aucun vocal n'est généré, un vocal envoyé est toujours un de vos vocaux enregistrés (statistiques, entonnoir, cash, contacts à relancer, relance prête, fiche, analyse…), liste complète dans [TOOLS.md](TOOLS.md)
 - Écrans interactifs (MCP Apps, depuis le 8 octobre 2026) : « qui m'a laissé en vu ? » affiche la liste des contacts à relancer avec un bouton Relancer, la relance préparée s'ouvre dans le même écran et part d'un clic sur Envoyer ; aussi la fiche d'un prospect et la synthèse du mois
 - Textes jamais coupés : messages, vocaux, notes, instructions de Kord sortent en entier ; une réponse longue se pagine (`next_cursor`)
 - Médias lisibles : une image porte sa description et son texte visible, un document son texte, une vidéo sa durée et ses paroles ; `ficiel_get_media` rend l'image ou le document lui-même
@@ -60,7 +60,7 @@ Ce chemin suit la documentation d'OpenAI, mais il n'a pas encore été joué de 
 ## Exemples de demandes
 
 - « Liste les conversations où mon dernier message a été vu sans réponse depuis plus de trois jours. »
-- « Lis tout l'échange avec @prenom et dis-moi ce qui l'a fait hésiter. »
+- « Lis tout l'échange avec `@prenom` et dis-moi ce qui l'a fait hésiter. »
 - « Prépare une relance pour les cinq prospects qui m'ont demandé mon prix en septembre, je les validerai dans Ficiel. »
 - « Ajoute à mes critères de qualification : a déjà un compte Instagram de plus de 5 000 abonnés. »
 
@@ -83,3 +83,16 @@ Ce que l'assistant peut faire dépend de la formule. **Essentiel** : tout le quo
 Abraham Rajoelina, fondateur de Ficiel : abraham@ficiel.io
 
 Documentation sous licence CC BY 4.0 (voir [LICENSE](LICENSE)).
+
+## Où trouver Ficiel MCP
+
+- Registre officiel MCP : `io.ficiel/ficiel`
+- [Glama](https://glama.ai/mcp/connectors/io.ficiel/ficiel)
+- [LobeHub](https://lobehub.com/mcp/ficiel)
+- [Cursor Directory](https://cursor.directory/plugins/ficiel-mcp)
+- [mcpservers.org](https://mcpservers.org/servers/ficiel-io-mcp)
+- Page officielle : https://ficiel.io/mcp/
+
+## Licence
+
+La documentation de ce dépôt est sous licence Creative Commons Attribution 4.0 International (CC BY 4.0, texte complet dans [LICENSE](LICENSE)), © 2026 Ficiel.io, Abraham Rajoelina. Elle ne couvre que les fichiers de ce dépôt : le service Ficiel, son serveur MCP et leur code ne sont pas concernés et restent la propriété de Ficiel.io.
