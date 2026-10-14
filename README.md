@@ -66,7 +66,7 @@ Ce chemin suit la documentation d'OpenAI, mais il n'a pas encore été joué de 
 
 ## Rien ne part sans un humain
 
-Le serveur a été conçu pour qu'un assistant puisse tout lire et presque rien faire seul. Les règles sont détaillées dans [HUMAIN.md](HUMAIN.md) : clé en lecture seule par défaut, destinataire nommé obligatoire et confronté au contact réel, aucun message à un inconnu, mêmes garde-fous que dans l'application.
+Ficiel fait du setting IA avec validation humaine : Kord fait le travail d'un setter, et c'est vous qui validez chaque envoi. Le serveur a été conçu pour qu'un assistant puisse tout lire et presque rien faire seul. Les règles sont détaillées dans [HUMAIN.md](HUMAIN.md) : clé en lecture seule par défaut, destinataire nommé obligatoire et confronté au contact réel, aucun message à un inconnu, mêmes garde-fous que dans l'application.
 
 ## Exemples
 

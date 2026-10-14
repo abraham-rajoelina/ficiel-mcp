@@ -64,7 +64,7 @@ This follows OpenAI's documentation but has not been tested end to end by Ficiel
 
 ## Nothing is sent without a human
 
-An assistant can read almost everything and do almost nothing on its own. See [HUMAIN.md](HUMAIN.md) (in French): read-only keys by default, a named recipient required on every send and checked against the real contact, no messages to strangers, the same safeguards as the app.
+Ficiel is AI setting with human approval: Kord does a setter's work, and you approve every send. An assistant can read almost everything and do almost nothing on its own. See [HUMAIN.md](HUMAIN.md) (in French): read-only keys by default, a named recipient required on every send and checked against the real contact, no messages to strangers, the same safeguards as the app.
 
 ## Access
 
