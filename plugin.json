@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ficiel",
+  "version": "1.3.2",
+  "description": "Read and search your Instagram, WhatsApp and LinkedIn DMs, find leads who never got a reply, and prepare follow-ups you approve.",
+  "author": {
+    "name": "Ficiel.io",
+    "email": "abraham@ficiel.io",
+    "url": "https://ficiel.io"
+  },
+  "homepage": "https://ficiel.io/mcp/",
+  "repository": "https://github.com/abraham-rajoelina/ficiel-mcp",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "instagram",
+    "whatsapp",
+    "linkedin",
+    "inbox",
+    "dm",
+    "sales",
+    "follow-up"
+  ]
+}
