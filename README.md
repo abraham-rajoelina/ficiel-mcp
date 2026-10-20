@@ -2,6 +2,8 @@
 
 [English version](README.en.md)
 
+[![Ficiel Mcp on AI Agents Listing](https://aiagentslisting.com/ficiel-mcp/badge.svg?claim=914da796b3d911f8a4a20997b419745b)](https://aiagentslisting.com/mcp/ficiel-mcp)
+
 Ficiel est une boîte de réception IA pour coachs et setters : elle ressort les anciennes conversations Instagram, WhatsApp et LinkedIn à relancer, prépare le message, et rien ne part sans validation humaine.
 
 Ce dépôt documente son serveur MCP (Model Context Protocol) : l'adresse qui permet à Claude, Cursor ou tout client MCP de lire vos conversations, retrouver un contact, repérer les prospects qui dorment et préparer une relance, avec votre autorisation. Il ne contient que de la documentation : le serveur est un service hébergé par Ficiel, son code n'est pas publié ici.
