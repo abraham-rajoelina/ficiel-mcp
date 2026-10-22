@@ -20,7 +20,7 @@ Liste noire, étapes protégées, tags bloquants, pause d'un canal, plafonds d'e
 
 ## Préparer sans envoyer
 
-`ficiel_prepare_followup` prépare une carte de relance sans rien envoyer. Vous la validez dans Ficiel, ou l'assistant l'approuve avec `ficiel_decide_card` si vous lui avez donné le droit d'écriture. `ficiel_simulate_reply` rédige ce que Kord répondrait, pour relecture, sans aucun outil d'envoi dans la simulation.
+`ficiel_prepare_followup` prépare une carte de relance sans rien envoyer. Vous la validez dans Ficiel, ou l'assistant l'approuve avec `ficiel_approve_card` (ou la refuse avec `ficiel_reject_card`, la reporte avec `ficiel_defer_card`) si vous lui avez donné le droit d'écriture. `ficiel_simulate_reply` rédige ce que Kord répondrait, pour relecture, sans aucun outil d'envoi dans la simulation.
 
 ## Tout est tracé, tout se coupe
 
