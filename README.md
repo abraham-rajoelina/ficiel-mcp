@@ -12,7 +12,7 @@ Ce dépôt documente son serveur MCP (Model Context Protocol) : l'adresse qui pe
 - Outils : 83 au 21 octobre 2026 (un outil par geste), dont 21 qui affichent un écran interactif, et 12 demandes prêtes à l'emploi (prompts) dans le menu de votre assistant ; aucun vocal n'est généré, un vocal envoyé est toujours un de vos vocaux enregistrés (statistiques, entonnoir, cash, contacts à relancer, relance prête, fiche, analyse…), liste complète dans [TOOLS.md](TOOLS.md)
 - Écrans interactifs (MCP Apps, depuis le 8 octobre 2026) : « qui m'a laissé en vu ? » affiche la liste des contacts à relancer avec un bouton Relancer, la relance préparée s'ouvre dans le même écran et part d'un clic sur Envoyer ; aussi la fiche d'un prospect et la synthèse du mois
 - Fichiers sans lien public : `ficiel_send_media` envoie un fichier joint par votre assistant (10 Mo au plus), `ficiel_send_document` fabrique un PDF à partir d'un texte
-- Cash (`ficiel_get_cash`) réservé au propriétaire de l'organisation ; chaque outil qui écrit est annoncé comme tel à votre assistant
+- Cash (`ficiel_get_cash`) réservé au propriétaire de l'organisation ; chaque outil déclare à votre assistant s'il lit, s'il écrit, et s'il envoie, efface ou écrase quelque chose
 - Textes jamais coupés : messages, vocaux, notes, instructions de Kord sortent en entier ; une réponse longue se pagine (`next_cursor`)
 - Médias lisibles : une image porte sa description et son texte visible, un document son texte, une vidéo sa durée et ses paroles ; `ficiel_get_media` rend l'image ou le document lui-même
 - Vu / non vu : l'état de lecture de votre dernier message, relu chez le canal au moment où l'assistant ouvre la conversation
