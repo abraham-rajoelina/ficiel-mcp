@@ -53,13 +53,11 @@ Les clés commencent par `fk_live_`. Une clé appartient à une seule organisati
 
 ## ChatGPT
 
-ChatGPT accepte les serveurs MCP distants en mode développeur, sur le web, pour les formules Plus, Pro, Business, Enterprise et Éducation ([documentation d'OpenAI](https://developers.openai.com/api/docs/guides/developer-mode)) :
+Ficiel est un plugin officiel ChatGPT, approuvé par OpenAI (publié le 06/11/2026). L'ajout se fait depuis le répertoire de ChatGPT, sans mode développeur :
 
-1. Dans ChatGPT, Réglages, Sécurité et connexion : activez le mode développeur.
-2. Créez une application de mode développeur avec l'adresse `https://bridge.ficiel.io/mcp`, authentification OAuth.
-3. ChatGPT vous envoie sur Ficiel : connectez-vous et choisissez lecture seule, ou lecture et envoi.
-
-Ce chemin suit la documentation d'OpenAI, mais il n'a pas encore été joué de bout en bout par Ficiel : les clients vérifiés sont Claude (application et Claude Code) et Cursor.
+1. Ouvrez la page du plugin : https://chatgpt.com/plugins/plugin_asdk_app_6ad8ea27ac408191928500da561ae2ee
+2. Ajoutez-le : ChatGPT vous envoie sur Ficiel.
+3. Connectez-vous et choisissez lecture seule, ou lecture et envoi.
 
 ## Exemples de demandes
 

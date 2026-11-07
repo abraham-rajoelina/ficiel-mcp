@@ -50,13 +50,11 @@ Keys start with `fk_live_`. A key belongs to a single organization and never see
 
 ## ChatGPT
 
-ChatGPT accepts remote MCP servers in developer mode, on the web, for Plus, Pro, Business, Enterprise and Education plans ([OpenAI documentation](https://developers.openai.com/api/docs/guides/developer-mode)):
+Ficiel is an official ChatGPT plugin, approved by OpenAI (published on 2026-11-06). Add it from the ChatGPT directory, no developer mode needed:
 
-1. In ChatGPT, Settings, Security and login: turn on developer mode.
-2. Create a developer-mode app with the URL `https://bridge.ficiel.io/mcp`, OAuth authentication.
-3. ChatGPT sends you to Ficiel: sign in and choose read only, or read and send.
-
-This follows OpenAI's documentation but has not been tested end to end by Ficiel yet: verified clients are Claude (app and Claude Code) and Cursor.
+1. Open the plugin page: https://chatgpt.com/plugins/plugin_asdk_app_6ad8ea27ac408191928500da561ae2ee
+2. Add it: ChatGPT sends you to Ficiel.
+3. Sign in and choose read only, or read and send.
 
 ## Example requests
 
