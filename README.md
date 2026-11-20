@@ -9,7 +9,7 @@ Ficiel est une boîte de réception IA pour coachs et setters : elle ressort les
 Ce dépôt documente son serveur MCP (Model Context Protocol) : l'adresse qui permet à Claude, Cursor ou tout client MCP de lire vos conversations, retrouver un contact, repérer les prospects qui dorment et préparer une relance, avec votre autorisation. Il ne contient que de la documentation : le serveur est un service hébergé par Ficiel, son code n'est pas publié ici.
 
 - Adresse du serveur : `https://bridge.ficiel.io/mcp` (Streamable HTTP)
-- Outils : 83 au 21 octobre 2026 (un outil par geste), dont 21 qui affichent un écran interactif, et 12 demandes prêtes à l'emploi (prompts) dans le menu de votre assistant ; aucun vocal n'est généré, un vocal envoyé est toujours un de vos vocaux enregistrés (statistiques, entonnoir, cash, contacts à relancer, relance prête, fiche, analyse…), liste complète dans [TOOLS.md](TOOLS.md)
+- Outils : 202 au 20 novembre 2026 : tout ce qui se fait dans l'application Ficiel se fait aussi depuis l'assistant, selon la formule (177 outils ouverts à toutes les formules, 25 réservés à l'Intégral) ; 71 affichent un écran interactif, et 12 demandes prêtes à l'emploi (prompts) dans le menu de votre assistant ; aucun vocal n'est généré, un vocal envoyé est toujours un de vos vocaux enregistrés (statistiques, entonnoir, cash, contacts à relancer, relance prête, fiche, analyse…), liste complète dans [TOOLS.md](TOOLS.md)
 - Écrans interactifs (MCP Apps, depuis le 8 octobre 2026) : « qui m'a laissé en vu ? » affiche la liste des contacts à relancer avec un bouton Relancer, la relance préparée s'ouvre dans le même écran et part d'un clic sur Envoyer ; aussi la fiche d'un prospect et la synthèse du mois
 - Fichiers sans lien public : `ficiel_send_media` envoie un fichier joint par votre assistant (10 Mo au plus), `ficiel_send_document` fabrique un PDF à partir d'un texte
 - Cash (`ficiel_get_cash`) réservé au propriétaire de l'organisation ; chaque outil déclare à votre assistant s'il lit, s'il écrit, et s'il envoie, efface ou écrase quelque chose
@@ -64,11 +64,16 @@ Ficiel est un plugin officiel ChatGPT, approuvé par OpenAI (publié le 06/11/20
 - « Liste les conversations où mon dernier message a été vu sans réponse depuis plus de trois jours. »
 - « Lis tout l'échange avec `@prenom` et dis-moi ce qui l'a fait hésiter. »
 - « Prépare une relance pour les cinq prospects qui m'ont demandé mon prix en septembre, je les validerai dans Ficiel. »
-- « Ajoute à mes critères de qualification : a déjà un compte Instagram de plus de 5 000 abonnés. »
+- « Ajoute à mes critères de qualification : a déjà un compte Instagram de plus de 5 000 abonnés. » (formule Intégral)
+- « Montre-moi mes appels à noter. »
+- « Qu'est-ce qui attend dans ma file d'envoi ? Retire le message pour `@prenom`. »
+- « Mets Kord Intégral en pause jusqu'à demain 8 h. »
+- « Pose une absence du 24 au 28 décembre. »
+- « Coupe le rapport du lundi. »
 
 ## Rien ne part sans un humain
 
-Ficiel fait du setting IA avec validation humaine : Kord fait le travail d'un setter, et c'est vous qui validez chaque envoi. Le serveur a été conçu pour qu'un assistant puisse tout lire et presque rien faire seul. Les règles sont détaillées dans [HUMAIN.md](HUMAIN.md) : clé en lecture seule par défaut, destinataire nommé obligatoire et confronté au contact réel, aucun message à un inconnu, mêmes garde-fous que dans l'application.
+Ficiel fait du setting IA avec validation humaine : Kord fait le travail d'un setter, et c'est vous qui validez chaque envoi. Le serveur a été conçu pour qu'un assistant puisse tout lire et presque rien faire seul. Les règles sont détaillées dans [HUMAIN.md](HUMAIN.md) : clé en lecture seule par défaut, destinataire nommé obligatoire et confronté au contact réel, mêmes garde-fous que dans l'application. Deux fonctions de la formule Intégral font exception, par votre choix : Kord Intégral, qui peut répondre et relancer seul et se coupe d'un clic, et le premier contact, qui écrit le premier sur WhatsApp et LinkedIn à un rythme qui protège le compte.
 
 ## Exemples
 
@@ -78,7 +83,7 @@ Des requêtes réelles et ce que l'assistant fait derrière : [examples/EXEMPLES
 
 Le serveur est ouvert aux organisations abonnées (dès 117 €/mois, satisfait ou remboursé pendant 10 jours : https://ficiel.io). Sans abonnement, en pause, ou si l'abonnement est impayé ou échu, chaque outil répond par un refus avec le lien pour réactiver l'accès.
 
-Ce que l'assistant peut faire dépend de la formule. **Essentiel** : tout le quotidien, c'est-à-dire lire, chercher, préparer, envoyer et programmer les relances, ranger ses contacts (tags, étapes, notes, un par un ou en lot) et ajuster Kord. **Intégral** : en plus, créer et régler les automatisations, l'IA par canal et le montant de l'offre. Lire ces réglages, couper un canal ou éteindre une automatisation restent ouverts à tous. Un outil réservé répond par un refus qui dit ce que la formule permet déjà et donne le lien pour en changer.
+Ce que l'assistant peut faire dépend de la formule. **Essentiel** : tout le travail quotidien, c'est-à-dire lire, chercher, préparer, envoyer et programmer les relances, ranger ses contacts (tags, étapes, notes, un par un ou en lot), noter ses appels, gérer la file d'envoi et les réglages du compte. **Intégral** : en plus, régler Kord et Kord Intégral, créer et régler les automatisations, activer une campagne, le premier contact, la réservation dans l'agenda et le montant de l'offre. Lire ces réglages, mettre en pause ou éteindre ce qui tourne seul restent ouverts à tous. L'assistant ne connecte pas un canal, ne branche pas un agenda, ne touche ni à l'abonnement ni à ses clés d'accès, et ne supprime rien définitivement : le détail est en tête de [TOOLS.md](TOOLS.md). Un outil réservé répond par un refus qui dit ce que la formule permet déjà et donne le lien pour en changer.
 
 ## Contact
 

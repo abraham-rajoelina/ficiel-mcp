@@ -7,7 +7,7 @@ Ficiel is an AI inbox for coaches and setters: it surfaces old Instagram, WhatsA
 This repository documents Ficiel's MCP (Model Context Protocol) server: the endpoint that lets Claude, Cursor or any MCP client read your conversations, find a contact, spot dormant leads and draft a follow-up, with your permission. It contains documentation only. The server is a service hosted by Ficiel and its code is not published here.
 
 - Server URL: `https://bridge.ficiel.io/mcp` (Streamable HTTP)
-- Tools: 83 as of October 21, 2026 (one tool per action), 21 of which display an interactive screen, plus 12 ready-made requests (prompts) in your assistant's menu; no voice message is ever generated, a voice message sent is always one you recorded (stats, funnel, cash, leads to follow up, drafted follow-up, prospect card, analysis…), full list in [TOOLS.md](TOOLS.md) (titles and descriptions in French, as sent by the server)
+- Tools: 202 as of November 20, 2026: anything that can be done in the Ficiel app can be done from the assistant, depending on the plan (177 tools open on every plan, 25 reserved to Intégral); 71 display an interactive screen, plus 12 ready-made requests (prompts) in your assistant's menu; no voice message is ever generated, a voice message sent is always one you recorded (stats, funnel, cash, leads to follow up, drafted follow-up, prospect card, analysis…), full list in [TOOLS.md](TOOLS.md) (titles and descriptions in French, as sent by the server)
 - Interactive screens (MCP Apps, since October 8, 2026): "who left me on read?" shows the leads to follow up with a Follow up button; the drafted follow-up opens in the same screen and is sent on a click on Send. Also a prospect card and a monthly summary
 - Files without a public link: `ficiel_send_media` sends a file attached by your assistant (10 MB max), `ficiel_send_document` builds a PDF from text
 - Cash (`ficiel_get_cash`) is restricted to the organization owner; every tool tells your assistant whether it reads, writes, or sends, deletes or overwrites something
@@ -61,16 +61,21 @@ Ficiel is an official ChatGPT plugin, approved by OpenAI (published on 2026-11-0
 - "List the conversations where my last message was seen and got no reply for more than three days."
 - "Read my whole thread with `@name` and tell me what made them hesitate."
 - "Draft a follow-up for the five prospects who asked my price in September, I will approve them in Ficiel."
+- "Show me my calls to rate."
+- "What is waiting in my send queue? Pull the message for `@name`."
+- "Pause Kord Intégral until tomorrow 8 am."
+- "Add time off from December 24 to 28."
+- "Turn off the Monday report."
 
 ## Nothing is sent without a human
 
-Ficiel is AI setting with human approval: Kord does a setter's work, and you approve every send. An assistant can read almost everything and do almost nothing on its own. See [HUMAIN.md](HUMAIN.md) (in French): read-only keys by default, a named recipient required on every send and checked against the real contact, no messages to strangers, the same safeguards as the app.
+Ficiel is AI setting with human approval: Kord does a setter's work, and you approve every send. An assistant can read almost everything and do almost nothing on its own. See [HUMAIN.md](HUMAIN.md) (in French): read-only keys by default, a named recipient required on every send and checked against the real contact, the same safeguards as the app. Two Intégral features are exceptions, by your own choice: Kord Intégral, which can reply and follow up on its own and turns off in one click, and first contact, which writes first on WhatsApp and LinkedIn at a pace that protects the account.
 
 ## Access
 
 The server is open to subscribed organizations (from €117/month, money back within 10 days: https://ficiel.io). Without a subscription, while paused, or if a subscription is unpaid or expired, every tool returns a refusal with the link to reactivate access.
 
-What the assistant can do depends on the plan. **Essentiel**: all the day-to-day work, meaning reading, searching, preparing, sending and scheduling follow-ups, organizing contacts (tags, stages, notes, one at a time or in bulk) and adjusting Kord. **Intégral**: on top of that, creating and configuring automations, per-channel AI and the offer amount. Reading those settings, pausing a channel or turning an automation off stay open to everyone. A reserved tool returns a refusal that says what the current plan already allows and links to change plans.
+What the assistant can do depends on the plan. **Essentiel**: all the day-to-day work, meaning reading, searching, preparing, sending and scheduling follow-ups, organizing contacts (tags, stages, notes, one at a time or in bulk), rating calls, managing the send queue and account settings. **Intégral**: on top of that, setting up Kord and Kord Intégral, creating and configuring automations, turning on a campaign, first contact, booking in the calendar and the offer amount. Reading those settings, pausing or turning off whatever runs on its own stay open to everyone. The assistant does not connect a channel or a calendar, does not touch the subscription or its own access keys, and never deletes anything permanently: details at the top of [TOOLS.md](TOOLS.md). A reserved tool returns a refusal that says what the current plan already allows and links to change plans.
 
 ## Contact
 
