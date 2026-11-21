@@ -2,7 +2,7 @@
 
 [Version française](README.md)
 
-Ficiel is an AI inbox for coaches and setters: it surfaces old Instagram, WhatsApp and LinkedIn conversations worth following up, drafts the message, and nothing is sent without human approval.
+Ficiel is the AI inbox for creators and entrepreneurs who sell in DMs. It surfaces old Instagram, WhatsApp and LinkedIn conversations worth following up, drafts the message, and nothing is sent without human approval.
 
 This repository documents Ficiel's MCP (Model Context Protocol) server: the endpoint that lets Claude, Cursor or any MCP client read your conversations, find a contact, spot dormant leads and draft a follow-up, with your permission. It contains documentation only. The server is a service hosted by Ficiel and its code is not published here.
 
